@@ -1,0 +1,115 @@
+html {
+    scroll-behavior: smooth; /*movimiento suave*/
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #fff5f8;
+    color: #333;
+}
+
+header {
+    background-color: #ff99cc;
+    padding: 20px;
+    color: white;
+}
+
+/*barra de navegacion*/
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/*botones generales*/
+.boton {
+    display: inline-block;
+    margin-top: 0px;
+    padding: 20px 40px;
+    background-color: #ff66a3;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+/*servicios*/
+#servicios {
+    padding: 40px 20px;
+}
+
+.servicio {
+    background-color: #ffe6eb;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.servicio h3 {
+    color: #ff66a3;
+    font-size: 1.5em;
+}
+
+.servicio p {
+    font-size: 1em;
+    color: #666;
+}
+
+/* boton de volver arriba */
+.btn-arriba {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #ff66a3;
+    color: white;
+    padding: 10px 15px;
+    font-size: 1.2em;
+    border-radius: 50%;
+    text-align: center;
+    text-decoration: none;
+    display: none; /*no se muestra al principio*/
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: opacity 0.3s ease;
+}
+
+/*cuando pasa el mouse*/
+.btn-arriba:hover {
+    background-color: #ff3385;
+}
+
+/*pie de pagina*/
+footer {
+    background-color: #ff99cc;
+    padding: 10px;
+    color: white;
+}
+
+/*responsividad*/
+@media (max-width: 768px) {
+    .contenedor {
+        flex-direction: column; /* junta los elementos en columnas */
+    }
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul li {
+        padding: 10px 0;
+    }
+}

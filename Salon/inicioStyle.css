@@ -1,0 +1,198 @@
+html {
+    scroll-behavior: smooth; /* para que al desplazarse, lo haga suavemente*/
+}
+
+body {
+    font-family: Arial, sans-serif; /*tipografia*/
+    margin: 0; /*margen*/
+    padding: 0; /*borde restante*/
+    text-align: center; /*el texto queda centrado*/
+    background-color: #fff5f8; /*color de fondo*/
+    color: #333; /*color de texto*/
+}
+
+header {
+    background-color: #ff99cc;
+    padding: 20px;
+    color: white;
+}
+
+/*nav*/
+nav ul {
+    list-style: none; /*ningun estilo de lista default*/
+    padding: 0;
+}
+
+nav ul li {
+    display: inline; /*hasta donde llegue el contenido*/
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold; /*en negrita*/
+}
+
+#reserva-turnos {
+    padding: 50px 20px;
+    background-color: #ffe6eb;
+    text-align: center;
+}
+
+/*botones generales*/
+.boton { 
+    display: inline-block; /*no inicia nueva linea, pero acepta alto y ancho*/
+    margin-top: 20px;
+    padding: 10px 20px; /*arriba abajo*/
+    background-color: #ff66a3;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px; /*redondea bordes*/
+}
+
+#servicios, #sobre-nosotras, #contacto {
+    padding: 40px 20px;
+}
+
+/*servicios*/
+#servicios {
+    padding: 20px 20px;
+    background-color: #ffd5ea;
+}
+
+#servicios h2 {
+    color: #ff66a3;
+    font-size: 1.8em;
+    text-align: center;
+    margin: 0 0 20px 0; /*arr, abj, der, izq*/
+}
+
+.servicios-lista {
+    display: flex; /*alinea horizontalmente*/
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 15px; /*espacio entre elementos hijos*/
+    margin: 0 auto;
+}
+
+.servicio {
+    background-color: white;
+    padding: 10px;
+    border-radius: 8px;
+    width: 250px; /*ancho del elemnto*/
+    display: flex;
+    align-items: center; /*en el centro y vertical*/
+    gap: 10px;
+    border: 1px solid #ff66a3; /*borde*/
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /*sombra (no horizontal, para arriba y abajo, desenfoque)*/
+    transition: transform 0.3s ease-in-out; /*animacion (se desvanece)*/
+}
+
+.servicio:hover { /*al pasar el mouse*/
+    transform: translateY(-5px);
+    background-color: #ff66a3;
+    color: white;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.icono {
+    font-size: 2em;
+    color: #ff66a3;
+    transition: color 0.3s ease;
+}
+
+.servicio a {
+    display: flex; 
+    align-items: center; 
+    color: #ff66a3; 
+    text-decoration: none;
+    font-size: 1.2em;
+    background-color: transparent; 
+    flex-grow: 1; /*el texto ocupa el espacio q queda*/
+}
+
+.servicio a:hover {
+    color: white;
+}
+
+/*sobre nosotras*/
+.equipo {
+    display: flex; 
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap; /*los elemtos se ajustaran en una linea debajo caudno no entren*/
+}
+
+.miembro {
+    background-color: #ffe6eb;
+    padding: 20px;
+    border-radius: 10px;
+    width: 280px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.miembro h3 {
+    color: #ff66a3;
+    font-size: 1.3em;
+}
+
+.miembro p {
+    font-size: 1em;
+    color: #666;
+}
+
+.miembro .foto {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+/* boton de volver arriba */
+.btn-arriba {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #ff66a3;
+    color: white;
+    padding: 10px 15px;
+    font-size: 1.2em;
+    border-radius: 50%;
+    text-align: center;
+    text-decoration: none;
+    display: none; /*no se muestra al principio*/
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: opacity 0.3s ease;
+}
+
+/*cuando para el mouse */
+.btn-arriba:hover {
+    background-color: #ff3385;
+}
+
+
+/*pie de pagina*/
+footer {
+    background-color: #ff99cc;
+    padding: 10px;
+    color: white;
+}
+
+/* responsividad */
+@media (max-width: 768px) {
+    .contenedor {
+        flex-direction: column; /* junta los elementos en columnas */
+    }
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul li {
+        padding: 10px 0;
+    }
+}

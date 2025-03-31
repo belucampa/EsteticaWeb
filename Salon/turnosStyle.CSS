@@ -1,0 +1,131 @@
+html {
+    scroll-behavior: smooth; /*movimiento suave*/
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #fff5f8;
+    color: #333;
+}
+
+header {
+    background-color: #ff99cc;
+    padding: 20px;
+    color: white;
+}
+
+/*barra de navegacion*/
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/*reservas de turno*/
+#reserva-turno {
+    padding: 40px 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+input, select {
+    padding: 10px;
+    margin: 10px 0;
+    width: 80%;
+    max-width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.boton {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #ff66a3;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+/* Estilo del cartel de confirmación */
+#cartel-confirmacion {
+    display: none; /* Inicialmente está oculto */
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #ff66a3;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    font-size: 1.5em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+}
+
+/* Estilo para el botón flotante */
+.btn-arriba {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #ff66a3;
+    color: white;
+    padding: 10px 15px;
+    font-size: 1.2em;
+    border-radius: 50%;
+    text-align: center;
+    text-decoration: none;
+    display: none; /* Inicialmente no se muestra */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: opacity 0.3s ease;
+}
+
+/* Cambiar color del botón al pasar el ratón */
+.btn-arriba:hover {
+    background-color: #ff3385;
+}
+
+footer {
+    background-color: #ff99cc;
+    padding: 10px;
+    color: white;
+}
+
+/* Responsividad con Media Queries */
+@media (max-width: 768px) {
+    .contenedor {
+        flex-direction: column; /* Apila los elementos en pantallas pequeñas */
+    }
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul li {
+        padding: 10px 0;
+    }
+}

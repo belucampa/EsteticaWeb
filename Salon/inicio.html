@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salón de Estética - Salón</title> <!--titulo en la web-->
+    <link rel="stylesheet" href="inicioStyle.css"> <!--archivo css-->
+    <script src="inicioScript.js"></script> <!--archivo js-->
+</body>
+
+</head>
+<body>
+    <header id="encabezado"> <!--llame el header "encabezado" para poder seleccionar todo en el boton de regresar arriba-->
+        <h1>Salon - Salón de Estética</h1>
+        <nav> <!--manu de navegacion-->
+            <ul>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="#sobre-nosotras">Sobre Nosotras</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="reserva-turnos"> <!--seccion para reservar turnos-->
+        <h2>Realza tu Belleza Natural</h2>
+        <p>Descubre nuestros tratamientos exclusivos de manicura, pestañas y más.</p>
+        <a href="turnos.html" class="boton">Reserva tu turno</a> <!--redirige a la pagina de reserva de turnos-->
+    </section>
+    
+    <section id="servicios"> <!--seccion para servicios-->
+        <h2>Nuestros Servicios</h2>
+        <div class="servicios-lista">
+            <div class="servicio">
+                <a href="servicios.html"> <!--redirige a la pagina de servicios-->
+                    <span class="icono">💅</span>
+                    Manicura y Pedicura
+                </a>
+            </div>
+    
+            <div class="servicio">
+                <a href="servicios.html"> <!--redirige a la pagina de servicios-->
+                    <span class="icono">👁️</span>
+                    Extensiones de Pestañas
+                </a>
+            </div>
+    
+            <div class="servicio">
+                <a href="servicios.html"> <!--redirige a la pagina de servicios-->
+                    <span class="icono">🌿</span>
+                    Tratamientos Faciales
+                </a>
+            </div>
+    
+            <div class="servicio">
+                <a href="servicios.html"> <!--redirige a la pagina de servicios-->
+                    <span class="icono">💆‍♀️</span>
+                    Masajes Relajantes
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    
+    <section id="sobre-nosotras"> <!--seccion sobre el staff-->
+        <h2>Conoce a Nuestro Equipo</h2>
+        <p>En (Salón), somos un grupo de profesionales apasionadas por el arte de realzar la belleza natural de cada persona. Nos dedicamos a ofrecer los mejores tratamientos y servicios, siempre con un enfoque personalizado y utilizando productos de alta calidad.</p>
+        
+        <div class="equipo"> <!--lista del equipo-->
+            <div class="miembro">
+                <img src="perfil1.webp" alt="Nombre - Apellido" class="foto">
+                <h3>Nombre - Apellido</h3>
+                <p><strong>Cosmetóloga</strong></p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Nulla vitae elit libero, a pharetra augue.</p>
+            </div>
+
+            <div class="miembro">
+                <img src="perfil2" alt="Nombre - Apellido" class="foto">
+                <h3>Nombre - Apellido</h3>
+                <p><strong>Esteticista</strong></p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Nulla vitae elit libero, a pharetra augue.</p>            </div>
+
+            <div class="miembro">
+                <img src="perfil3" alt="Nombre - Apellido" class="foto">
+                <h3>Nombre - Apellido</h3>
+                <p><strong>Masajista</strong></p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Nulla vitae elit libero, a pharetra augue.</p>            </div>
+        </div>
+    </section>
+    
+    <section id="contacto"> <!--seccion de contacto-->
+        <h2>Contacto</h2>
+        <p>📍 Dirección: Av. Salón 123, Ciudad</p>
+        <p>📞 Teléfono: 1234-5678</p>
+        <p>📧 Email: contacto@Salón.com</p>
+    </section>
+    
+    <!-- boton para volver al inicio -->
+    <a href="#encabezado" class="btn-arriba" id="btn-arriba">↑</a>
+
+
+    <footer> <!--pie de pagina-->
+        <p>&copy; Salón - Todos los derechos reservados</p>
+    </footer>
+</body>
+</html>
